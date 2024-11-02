@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="calculator">
+
+        <div class="heading-text">
+            <h1>Compound Interest Calculator</h1>
+        </div>
+
+        <div class="input-output-container">
+
+            <div class="input-container">
+                <div class="principal-amount-input">
+                    <p>Enter Principal amount in ₹</p>
+                    <input id="principal-amount" type="number" min="1" step = 0.01 placeholder="E.g: 12000">
+                </div>
+                <div class="rate-input">
+                    <p>Enter rate in %</p>
+                    <input id="rate" type="number" min="1" placeholder="E.g: 4">
+                </div>
+                <div class="years-input">
+                    <p>Enter time in years</p>
+                    <input id="time" type="number" min="1" placeholder="E.g: 3">
+                </div>
+            </div>
+
+            <div class="output-container">
+                <div class="total-amount-output">
+                    <h6>Total amount output:</h6>
+                    <p id="total-amount"></p>
+                </div>
+                <div class="total-interest-output">
+                    <h6>Total interest output:</h6>
+                    <p id="total-interest"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="calculate-button">
+            <button onclick="calculateCPI()">Calculate</button>
+        </div>
+    </div>
+    
+</body>
+    <script src="script.js"></script>
+</html>
